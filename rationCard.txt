@@ -1,0 +1,15 @@
+drop database Ration_Card;
+ create database Ration_Card;
+use Ration_card;
+create table entries(ration_Id varchar(10) primary key,name varchar(50) not null,FatherOrHusbandName varchar(50),
+Address varchar(80),House_no varchar(20), gali_no varchar(20),locality varchar(20),nationality varchar(20),Age integer,
+RegNo VARCHAR(10),Circleno integer,DateOfReceipt Date,DateOfCalling date,RelationWithTheApplicant varchar(20),DateOfArrival date,
+PeriodOfStayInCity integer,CircleOfCityYouShiftedFrom integer,PlacefromWhichMigrated varchar(50),StatefromWhichMigrated varchar(20),
+ParticularsOfSurrenderedCardCerificate varchar(80),IdCardNo integer);
+Insert into entries values('RD0001','Anil Kumar','Ramesh Kumar','A-22,Hauz Khas,New Delhi','A-22',NULL,'Hauz Khas','Indian'
+,23,'D0023',5,'2002-07-25',NULL,'SELF','1950-01-12',23,NULL,NULL,NULL,NULL,313),
+('RD0002','Sunil Kumar','Suresh Kumar','H-56,GALI NO.-231,CHANDNI CHOWK,NEW DELHI','H-56','GALI NO.-231','CHANDNI CHOWK','INDIAN'
+,28,'D0100',10,'2001-05-12','2002-01-03','SELF','1935-05-03',30,NULL,NULL,NULL,NULL,1071),
+('RD0003','Mahesh Singh','Nitesh Singh','K-67,GALI NO.-6,RAJENDRA NAGAR,UTTAR PRADESH','K-67','GALI NO.-6','RAJENDRA NAGAR','INDIAN',
+28,'D0201',15,'2007-03-16',NULL,'SELF','2006-01-20',2,NULL,'BANGALORE','KARNATAKA','RB0065',1231);
+SELECT * FROM ENTRIES;
